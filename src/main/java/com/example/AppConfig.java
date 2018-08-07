@@ -15,6 +15,7 @@ import org.springframework.web.filter.CharacterEncodingFilter;
 import javax.sql.DataSource;
 
 @Configuration
+//@Profile("dev")
 public class AppConfig {
     @Autowired
     DataSourceProperties dataSourceProperties;

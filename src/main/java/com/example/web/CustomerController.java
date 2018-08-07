@@ -26,7 +26,7 @@ public class CustomerController {
         return new CustomerForm();
     }
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(value = "list", method = RequestMethod.GET)
     String list(Model model) {
         List<Customer> customers = customerService.findAll();
         model.addAttribute("customers", customers);
